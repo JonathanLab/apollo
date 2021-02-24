@@ -1,0 +1,308 @@
+html {
+    min-height: 101%;
+}
+
+body{
+    font-family: 'Fauna One', serif;
+
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background:rgb(30, 30, 30) !important;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: white;
+    }
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    color:rgba(246, 144, 61);
+}
+
+.landingfont{
+    font-family: 'Playfair Display', serif;
+}
+
+.regular{
+    font-weight: 400;
+}
+
+.regulari{
+    font-weight: 400;
+    font-style: italic;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.boldi{
+    font-weight: 700;
+    font-style: italic;
+}
+
+.extrabold{
+    font-weight: 900;
+}
+
+.extraboldi{
+    font-weight: 900;
+    font-style: italic;
+}
+
+.font50{
+    font-size: 4em;
+}
+
+.font40{
+    font-size: 3em;
+}
+
+.font30{
+    font-size: 2.5em;
+}
+
+.font20{
+    font-size: 1em;
+}
+
+.orange{
+    color: rgba(255, 131, 0);
+}
+
+.transparent{
+    background-color: transparent;
+    position: absolute;
+    z-index: 5000;
+}
+
+.lbg{
+	background:
+
+	linear-gradient(
+		rgba(68, 68, 68, .8),
+        rgba(68, 68, 68, .8)
+        ),
+
+    url("background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+
+
+@media only screen and (max-device-width: 1366px) {
+    .lbg {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-device-width: 960px) and (orientation: landscape){
+    .mbg{
+        height: 42vh;
+    }
+}
+.mt-20{
+    margin-top: 20%;
+}
+
+.mt-30vh{
+    margin-top: 50%;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .mt-30vh {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (min-device-width: 960px) and (max-device-width: 1366px) and (orientation: landscape) {
+    .mt-30vh {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-device-width: 960px) and (orientation: landscape) {
+    .lbg {
+        height: 120vh;
+    }
+    .mt-30vh {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-device-width: 960px) {
+    .scroll-downs{
+        display: none!important;
+    }
+}
+
+
+
+.dbg{
+    background-color: rgba(68, 68, 68, .05);
+    background-size: cover;
+}
+
+.darkbutton{
+	font-size: 18px;
+	font-weight: 500;
+	color: black;
+	border: 1px solid rgba(255, 131, 0);
+	padding: 10px 20px;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+.darkbutton:hover{
+    background-color: rgba(255, 131, 0, 0.5);
+    color: black;
+}
+
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.jobbutton{
+	color: black;
+	border: 1px solid rgb(255, 131, 0);
+    padding: 10px 20px;
+}
+.jobcontent{
+    color: black;
+}
+
+.jobcontent:hover{
+    background-color: rgba(255, 131, 0, 0.5);
+    color: white
+}
+
+
+.landingbutton{
+	font-size: 18px;
+	font-weight: 700;
+	color: white;
+	border: 1px solid rgb(255, 131, 0);
+	padding: 10px 20px;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+.landingbutton:hover{
+    background-color: rgba(255, 131, 0, 0.5);
+    color: white
+}
+
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 131, 0, 0), rgba(255, 131, 0, 0.75), rgba(255, 131, 0, 0));
+}
+
+.scroll-downs {
+    position: absolute;
+    width :34px;
+    height: 30px;
+    bottom: 80px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+
+header.masthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+    opacity: 0.5;
+  }
+
+header.masthead .site-heading {
+    padding: 20% 0 10%;
+    margin: 5%;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 769px) {
+    header.masthead .site-heading {
+      padding: 100px 0 5%;
+    }
+  }
+
+header.masthead {
+    background: no-repeat center center;
+    background-color: #868e96;
+    background-attachment: scroll;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.menunav{
+    margin: 2%;
+    color: rgba(255, 131, 0);
+}
+
+.menunav:hover{
+    color: black;
+}
+
+.menuactive{
+    color: black!important;
+}
+
+.navbar-
